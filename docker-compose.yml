@@ -4,8 +4,8 @@
 proxy:
   container_name: proxy
   restart: always
-  image: accenture/adop-nginx:0.3.0
-  #build: ../images/docker-nginx/
+  #image: accenture/adop-nginx:0.3.0
+  build: ../adop-nginx-0.3.0/
   net: ${CUSTOM_NETWORK_NAME}
   ports:
     - "80:80"
